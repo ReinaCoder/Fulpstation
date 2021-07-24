@@ -32,5 +32,6 @@
 	box = /obj/item/storage/box/survival/syndie
 	suit_store = /obj/item/tank/internals/oxygen
 	belt = /obj/item/storage/belt/utility/syndicate
-	l_pocket = /datum/uplink_item/dangerous/pistol
-	r_pocket = /datum/uplink_item/ammo/pistolhp
+	l_pocket = /obj/item/gun/ballistic/automatic/pistol
+	r_pocket = /obj/item/ammo_box/magazine/m9mm
+
