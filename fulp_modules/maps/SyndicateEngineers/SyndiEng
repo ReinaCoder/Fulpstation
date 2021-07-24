@@ -23,12 +23,14 @@
 	name = "Syndicate Engineer"
 	uniform = /obj/item/clothing/under/syndicate
 	suit = /obj/item/clothing/suit/space/syndicate/black/engie
+	head = /obj/item/clothing/head/helmet/space/syndicate/black/engie
 	mask = /obj/item/clothing/mask/gas/syndicate
 	shoes = /obj/item/clothing/shoes/magboots/syndie
 	ears = /obj/item/radio/headset/syndicate/alt
 	gloves = /obj/item/clothing/gloves/tackler/combat/insulated
 	back = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
+	suit_store = /obj/item/tank/internals/oxygen
 	belt = /obj/item/storage/belt/utility/syndicate/PopulateContents()
 		new /obj/item/screwdriver/nuke(src)
 		new /obj/item/wrench/combat(src)
