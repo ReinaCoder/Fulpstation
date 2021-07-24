@@ -31,13 +31,6 @@
 	back = /obj/item/storage/backpack/duffelbag/syndie
 	box = /obj/item/storage/box/survival/syndie
 	suit_store = /obj/item/tank/internals/oxygen
-	belt = /obj/item/storage/belt/utility/syndicate/PopulateContents()
-		new /obj/item/screwdriver/nuke(src)
-		new /obj/item/wrench/combat(src)
-		new /obj/item/weldingtool/largetank(src)
-		new /obj/item/crowbar(src)
-		new /obj/item/wirecutters(src)
-		new /obj/item/multitool(src)
-		new /obj/item/inducer/syndicate(src)
+	belt = /obj/item/storage/belt/utility/syndicate
 	l_pocket = /datum/uplink_item/dangerous/pistol
 	r_pocket = /datum/uplink_item/ammo/pistolhp
