@@ -49,19 +49,19 @@
 // GYRO ZEPPELLI
 
 /obj/item/clothing/under/costume_2021/gyro_zeppeli
-	name = "Spin Master's Coat"
+	name = "Spin Master's coat"
 	desc = "GO! GO! ZEPPELI"
 	icon_state = "gyro_under"
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
 /obj/item/clothing/head/costume_2021/gyro_zeppeli
-	name = "Spin Master's Hat"
+	name = "Spin Master's hat"
 	desc = "For the hot American day."
 	icon_state = "gyro_hat"
 
 /obj/item/clothing/shoes/costume_2021/gyro_zeppeli
-	name = "Spin Master's Boots"
+	name = "Spin Master's boots"
 	desc = "Perfect for a cross-country trip!"
 	icon_state = "gyro_shoes"
 
@@ -77,24 +77,24 @@
 /// Rakka
 
 /obj/item/clothing/under/costume_2021/rakka
-	name = "Thrift Store Dress"
+	name = "thrift store dress"
 	desc = "Reminiscent of a schoolgirl uniform."
 	icon_state = "rakka_under"
 	fitted = FEMALE_UNIFORM_TOP
 
 /obj/item/clothing/shoes/costume_2021/rakka
-	name = "Wooden Sandals"
+	name = "wooden sandals"
 	desc = "Standard wooden sandals."
 	icon_state = "rakka_shoes"
 
 /obj/item/clothing/head/costume_2021/rakka
-	name = "Old Home Halo"
+	name = "Old Home halo"
 	desc = "Not related to any religion."
 	icon_state = "rakka_hat"
 	dynamic_hair_suffix = ""
 
 /obj/item/clothing/suit/costume_2021/rakka
-	name = "Thrift Store Jacket"
+	name = "thrift store jacket"
 	desc = "A warm jacket"
 	icon_state = "rakka_suit"
 
@@ -111,22 +111,22 @@
 /// Char
 
 /obj/item/clothing/under/costume_2021/char
-	name = "Red Comet's Uniform"
+	name = "Red Comet's uniform"
 	desc = "USE FOR ONE YEAR ONLY!"
 	icon_state = "char_under"
 
 /obj/item/clothing/shoes/costume_2021/char
-	name = "Red Comet's Boots"
+	name = "Red Comet's boots"
 	desc = "Is it common courtesty to take off your shoes before entering a mech?"
 	icon_state = "char_boots"
 
 /obj/item/clothing/head/costume_2021/char
-	name = "Red Comet's Helmet"
+	name = "Red Comet's helmet"
 	desc = "Use to laugh at people."
 	icon_state = "char_helmet"
 
 /obj/item/clothing/gloves/costume_2021/char
-	name = "Red Comet's Gloves"
+	name = "Red Comet's gloves"
 	desc = "For the hands of those who have never betrayed anyone in their life."
 	icon_state = "char_gloves"
 
@@ -144,7 +144,7 @@
 
 /obj/item/clothing/under/costume_2021/chris
 	name = "S.T.A.R.S Uniform"
-	desc = "Leon, you must-"
+	desc = "Do not punch boulders with this."
 	icon_state = "chris_under"
 
 /obj/item/storage/box/halloween/edition_21/chris
@@ -160,18 +160,18 @@
 /// IRA
 
 /obj/item/clothing/under/costume_2021/ira
-	name = "Commando Jumper "
+	name = "commando jumper "
 	desc = "Perfect for cold space... months?"
 	icon_state = "ira_under"
 
 /obj/item/clothing/head/costume_2021/ira
-	name = "Balaclava and Beret"
+	name = "balaclava and beret"
 	desc = "Not indicative of rank"
 	icon_state = "ira_head"
 	flags_inv = HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
 
 /obj/item/clothing/suit/costume_2021/ira
-	name = "DPM Field Jacket"
+	name = "DPM field jacket"
 	desc = "Not to be mistaken for the enemy"
 	icon_state = "ira_suit"
 
@@ -248,13 +248,13 @@
 /// Alucard
 
 /obj/item/clothing/suit/costume_2021/alucard
-	name = "Vampiric Cloak"
+	name = "vampiric cloak"
 	desc = "What is Dracula backwards?"
 	icon_state = "alucard_suit"
 
 
 /obj/item/clothing/shoes/costume_2021/alucard
-	name = "Vampiric Boots"
+	name = "vampiric boots"
 	desc = "For double jumping."
 	icon_state = "alucard_boots"
 
