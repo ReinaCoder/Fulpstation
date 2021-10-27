@@ -149,7 +149,7 @@
 
 /obj/item/storage/box/halloween/edition_21/chris
 	theme_name = "2021's Chris Redfield"
-	illustration = "reina_box"
+	illustration = "storage_box"
 	costume_contents = list(
 	 	/obj/item/clothing/under/costume_2021/chris,
 	 	/obj/item/clothing/shoes/jackboots,
@@ -243,4 +243,26 @@
 		/obj/item/clothing/under/costume_2021/patlabor,
 		/obj/item/clothing/shoes/laceup,
 		/obj/item/clothing/gloves/color/white,
+	)
+
+/// Alucard
+
+/obj/item/clothing/suit/costume_2021/alucard
+	name = "Vampiric Cloak"
+	desc = "What is Dracula backwards?"
+	icon_state = "alucard_suit"
+
+
+/obj/item/clothing/shoes/costume_2021/alucard
+	name = "Vampiric Boots"
+	desc = "For double jumping."
+	icon_state = "alucard_boots"
+
+
+/obj/item/storage/box/halloween/edition_21/alucard
+	theme_name = "2021's Alucard"
+	illustration = "reina_box"
+	costume_contents = list(
+		/obj/item/clothing/suit/costume_2021/alucard,
+		/obj/item/clothing/shoes/costume_2021/alucard,
 	)
