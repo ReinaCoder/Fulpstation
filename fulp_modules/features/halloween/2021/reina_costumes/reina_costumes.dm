@@ -30,7 +30,6 @@
 	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
-
 /obj/item/clothing/head/costume_2021/jill_valentine
 	name = "S.T.A.R.S. Hat"
 	desc = "Itchy. Tasty."
