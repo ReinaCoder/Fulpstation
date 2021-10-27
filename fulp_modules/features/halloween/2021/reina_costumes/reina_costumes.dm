@@ -4,8 +4,6 @@
  * From: Resident Evil
  * Gyro Zeppeli
  * From: Steel Ball Run
- * Alucard
- * From: Castlevania
  * Rakka
  * From: Haibane Renmei
  * Char
@@ -17,6 +15,8 @@
  * From: Bloodborne
  * Patlabor Officer
  * From: Patlabor
+ * Alucard
+ * From: Castlevania
  * By: Saladlegs (Reina)
  */
 
