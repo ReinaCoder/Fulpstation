@@ -27,7 +27,6 @@
 	name = "S.T.A.R.S. Uniform"
 	desc = "Hungry for a Jill sandwich?"
 	icon_state = "jill_under"
-	fitted = FEMALE_UNIFORM_TOP
 	can_adjust = FALSE
 
 /obj/item/clothing/head/costume_2021/jill_valentine
@@ -53,7 +52,6 @@
 	desc = "GO! GO! ZEPPELI"
 	icon_state = "gyro_under"
 	fitted = FEMALE_UNIFORM_TOP
-	can_adjust = FALSE
 
 /obj/item/clothing/head/costume_2021/gyro_zeppeli
 	name = "Spin Master's hat"
