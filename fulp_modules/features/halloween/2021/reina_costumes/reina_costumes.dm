@@ -183,7 +183,6 @@
 		/obj/item/clothing/gloves/color/black,
 	 	/obj/item/clothing/shoes/sneakers/black,
 	 	/obj/item/gun/ballistic/automatic/pistol/toy,
-		/obj/item/gun/ballistic/automatic/c20r/toy/unrestricted,
 	)
 
 /// Doll
