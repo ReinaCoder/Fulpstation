@@ -1,10 +1,14 @@
 //Chasises - snowflake phantom accessory for choosing chassises
 /datum/sprite_accessory/proto_chassis
 	icon = null
-	icon_state = "protogen"
+	icon_state = null
 	color_src = null
 
-/datum/sprite_accessory/proto_chassis/mcgreyscale
+/datum/sprite_accessory/proto_chassis/default
+	name = "Default"
+	icon_state = "protogen"
+
+/datum/sprite_accessory/proto_chassis/loader
 	name = "Loader PROT-model"
 	icon_state = "loader"
 

@@ -25,6 +25,11 @@
 	var/bruising_desc = "bruising"
 	var/burns_desc = "burns"
 	var/cellulardamage_desc = "cellular damage"
+	var/limbs_icon
+
+/obj/item/bodypart
+	//Works in conjuction with limbs_icon to provide the overlay of the limb.
+	var/rendered_bp_icon
 
 
 /**
