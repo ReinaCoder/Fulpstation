@@ -8,10 +8,9 @@
 
 /datum/preference/choiced/proto_chassis/init_possible_values()
 	var/list/values = list()
-
+	var/chassis_icon = 'fulp_modules/features/species/icons/proto_chassis.dmi'
 	var/icon/proto_body = icon('icons/blanks/32x32.dmi', "nothing")
 
-	proto_body.Blend(icon('icons/mob/moth_wings.dmi', "m_moth_wings_plain_BEHIND"), ICON_OVERLAY)
 
 	var/list/body_parts = list(
 		BODY_ZONE_HEAD,
@@ -23,7 +22,7 @@
 	)
 
 	for (var/body_part in body_parts)
-		proto_body.Blend(icon('fulp_modules/features/species/icons/', "proto_[body_part][gender]"), ICON_OVERLAY)
+		proto_body.Blend(icon(chassis_icon, "protogen_[body_part]"), ICON_OVERLAY)
 
 	for (var/markings_name in GLOB.proto_chassis_list)
 		var/datum/sprite_accessory/markings = GLOB.proto_chassis_list[markings_name]

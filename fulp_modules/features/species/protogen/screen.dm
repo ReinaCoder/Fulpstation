@@ -2,10 +2,12 @@
 	icon = 'fulp_modules/features/species/icons/proto_screens.dmi'
 	color_src = null
 
+
 /datum/sprite_accessory/screen/blank
 	name = "Blank"
 	icon_state = "blank"
 
+/*
 /datum/sprite_accessory/screen/pink
 	name = "Pink"
 	icon_state = "pink"
@@ -117,3 +119,4 @@
 /datum/sprite_accessory/screen/stars
 	name = "Stars"
 	icon_state = "stars"
+*/
