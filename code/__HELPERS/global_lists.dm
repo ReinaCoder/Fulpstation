@@ -32,6 +32,10 @@
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_wings, GLOB.moth_wings_list)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_antennae, GLOB.moth_antennae_list)
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_markings, GLOB.moth_markings_list)
+	//FULP EDIT
+	init_sprite_accessory_subtypes(/datum/sprite_accessory/screen, GLOB.proto_screens_list)
+	init_sprite_accessory_subtypes(/datum/sprite_accessory/proto_chassis, GLOB.proto_chassis_list)
+	//FULP EDIT END
 	init_sprite_accessory_subtypes(/datum/sprite_accessory/tails/monkey, GLOB.tails_list_monkey)
 
 	//Species

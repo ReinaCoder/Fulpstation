@@ -1,14 +1,14 @@
 //Chasises - snowflake phantom accessory for choosing chassises
 /datum/sprite_accessory/proto_chassis
 	icon = null
-	icon_state = "ipc"
+	icon_state = "protogen"
 	color_src = null
 
 /datum/sprite_accessory/proto_chassis/mcgreyscale
-	name = "Morpheus Cyberkinetics(Greyscale)"
-	icon_state = "mcgipc"
-	color_src = 1 //Here it's used to tell apart greyscalling
+	name = "Loader PROT-model"
+	icon_state = "loader"
 
+/*
 /datum/sprite_accessory/proto_chassis/bishopcyberkinetics
 	name = "Bishop Cyberkinetics"
 	icon_state = "bshipc"
@@ -44,3 +44,4 @@
 /datum/sprite_accessory/proto_chassis/zenghupharmaceuticals
 	name = "Zeng-Hu Pharmaceuticals"
 	icon_state = "zhpipc"
+*/
