@@ -5,7 +5,7 @@
 	default_color = "00FF00"
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER,TRAIT_RADIMMUNE,TRAIT_VIRUSIMMUNE,TRAIT_NOBREATH,TRAIT_GENELESS,TRAIT_STABLEHEART)
-	species_traits = list(MUTCOLORS_PARTSONLY,LIPS,NOEYESPRITES,NOTRANSSTING,TRAIT_RESISTCOLD,NOZOMBIE,TRAIT_PIERCEIMMUNE)
+	species_traits = list(,IPS,NOEYESPRITES,NOTRANSSTING,TRAIT_RESISTCOLD,NOZOMBIE,TRAIT_PIERCEIMMUNE)
 	mutant_bodyparts = list("proto_screen" = "BSOD", "ipc_antenna" = "None", "proto_chassis" = "Morpheus Cyberkinetics(Greyscale)")
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	burnmod = 1.5
@@ -23,20 +23,6 @@
 		if(prob(10))
 			to_chat(H, "<span class='warning'>Alert: Critical damage taken! Cooling systems failing!</span>")
 			do_sparks(3, TRUE, H)
-
-/datum/species/protogen/spec_revival(mob/living/carbon/human/H)
-	. = ..()
-	H.dna.features["proto_screen"] = "BSOD"
-	H.update_body()
-	H.say("Reactivating [pick("core systems", "central subroutines", "key functions")]...")
-	sleep(3 SECONDS)
-	H.say("Reinitializing [pick("personality matrix", "behavior logic", "morality subsystems")]...")
-	sleep(3 SECONDS)
-	H.say("Finalizing setup...")
-	sleep(3 SECONDS)
-	H.say("Unit [H.real_name] is fully functional. Have a nice day.")
-	H.dna.features["proto_screen"] = saved_screen
-	H.update_body()
 
 /datum/species/protogen/spec_death(gibbed, mob/living/carbon/human/C)
 	. = ..()
@@ -88,17 +74,6 @@
 
 /datum/species/protogen/check_roundstart_eligible()
 	return TRUE
-
-/datum/species/protogen/random_name(gender,unique,lastname)
-	if(unique)
-		return random_unique_ipc_name()
-
-	var/randname = ipc_name()
-
-	if(lastname)
-		randname += " [lastname]"
-
-	return randname
 
 /datum/language_holder/protogen // Common + Machine
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
