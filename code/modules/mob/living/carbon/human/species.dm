@@ -906,10 +906,10 @@ GLOBAL_LIST_EMPTY(features_by_species)
 						accessory = GLOB.eyes_beefman[source.dna.features["beefeyes"]]
 				if("beefmouth")
 					accessory = GLOB.mouths_beefman[source.dna.features["beefmouth"]]
-				if("ipc_screen")
-					accessory = GLOB.ipc_screens_list[source.dna.features["ipc_screen"]]
-				if("ipc_chassis")
-					accessory = GLOB.ipc_chassis_list[source.dna.features["ipc_chassis"]]  // [FULP EDIT END]
+				if("proto_screen")
+					accessory = GLOB.proto_screens_list[source.dna.features["proto_screen"]]
+				if("proto_chassis")
+					accessory = GLOB.proto_chassis_list[source.dna.features["proto_chassis"]]  // [FULP EDIT END]
 				// Fulp edit END
 				if("body_markings")
 					accessory = GLOB.body_markings_list[source.dna.features["body_markings"]]

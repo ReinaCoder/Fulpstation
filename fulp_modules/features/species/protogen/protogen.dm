@@ -6,7 +6,7 @@
 	inherent_biotypes = MOB_ROBOTIC|MOB_HUMANOID
 	inherent_traits = list(TRAIT_ADVANCEDTOOLUSER,TRAIT_RADIMMUNE,TRAIT_VIRUSIMMUNE,TRAIT_NOBREATH,TRAIT_GENELESS,TRAIT_STABLEHEART)
 	species_traits = list(MUTCOLORS_PARTSONLY,LIPS,NOEYESPRITES,NOTRANSSTING,TRAIT_RESISTCOLD,NOZOMBIE,TRAIT_PIERCEIMMUNE)
-	mutant_bodyparts = list("ipc_screen" = "BSOD", "ipc_antenna" = "None", "ipc_chassis" = "Morpheus Cyberkinetics(Greyscale)")
+	mutant_bodyparts = list("proto_screen" = "BSOD", "ipc_antenna" = "None", "proto_chassis" = "Morpheus Cyberkinetics(Greyscale)")
 	changesource_flags = MIRROR_BADMIN | WABBAJACK | MIRROR_MAGIC | MIRROR_PRIDE | ERT_SPAWN | RACE_SWAP | SLIME_EXTRACT
 	burnmod = 1.5
 	heatmod = 1.2
@@ -26,7 +26,7 @@
 
 /datum/species/protogen/spec_revival(mob/living/carbon/human/H)
 	. = ..()
-	H.dna.features["ipc_screen"] = "BSOD"
+	H.dna.features["proto_screen"] = "BSOD"
 	H.update_body()
 	H.say("Reactivating [pick("core systems", "central subroutines", "key functions")]...")
 	sleep(3 SECONDS)
@@ -35,16 +35,16 @@
 	H.say("Finalizing setup...")
 	sleep(3 SECONDS)
 	H.say("Unit [H.real_name] is fully functional. Have a nice day.")
-	H.dna.features["ipc_screen"] = saved_screen
+	H.dna.features["proto_screen"] = saved_screen
 	H.update_body()
 
 /datum/species/protogen/spec_death(gibbed, mob/living/carbon/human/C)
 	. = ..()
-	saved_screen = C.dna.features["ipc_screen"]
-	C.dna.features["ipc_screen"] = "BSOD"
+	saved_screen = C.dna.features["proto_screen"]
+	C.dna.features["proto_screen"] = "BSOD"
 	C.update_body()
 	sleep(3 SECONDS)
-	C.dna.features["ipc_screen"] = null // Turns off their monitor on death.
+	C.dna.features["proto_screen"] = null // Turns off their monitor on death.
 	C.update_body()
 
 /datum/species/protogen/on_species_gain(mob/living/carbon/human/proto)
@@ -56,10 +56,10 @@
 	if(!screen)
 		screen = new
 		screen.Grant(proto)
-	var/chassis = proto.dna.features["ipc_chassis"]
+	var/chassis = proto.dna.features["proto_chassis"]
 	if(!chassis)
 		return
-	var/datum/sprite_accessory/ipc_chassis/chassis_of_choice = GLOB.ipc_chassis_list[chassis]
+	var/datum/sprite_accessory/proto_chassis/chassis_of_choice = GLOB.proto_chassis_list[chassis]
 	if(chassis_of_choice)
 		limbs_id = chassis_of_choice.icon_state
 		if(chassis_of_choice.color_src)
@@ -80,16 +80,16 @@
 
 /datum/action/innate/monitor_change/Activate()
 	var/mob/living/carbon/human/protogen = owner
-	var/new_proto_screen = input(usr, "Choose your character's screen:", "Monitor Display") as null|anything in GLOB.ipc_screens_list
+	var/new_proto_screen = input(usr, "Choose your character's screen:", "Monitor Display") as null|anything in GLOB.proto_screens_list
 	if(!new_proto_screen)
 		return
-	protogen.dna.features["ipc_screen"] = new_proto_screen
+	protogen.dna.features["proto_screen"] = new_proto_screen
 	protogen.update_body()
 
 /datum/species/protogen/check_roundstart_eligible()
 	return TRUE
 
-/datum/species/ipc/random_name(gender,unique,lastname)
+/datum/species/protogen/random_name(gender,unique,lastname)
 	if(unique)
 		return random_unique_ipc_name()
 
@@ -105,3 +105,12 @@
 								/datum/language/machine = list(LANGUAGE_ATOM))
 	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 							/datum/language/machine = list(LANGUAGE_ATOM))
+
+/datum/species/protogen/get_features()
+	var/list/features = ..()
+	features += "feature_beefcolor"
+	features += "feature_beefeyes"
+	features += "feature_beefmouth"
+	features += "feature_beef_trauma"
+
+	return features

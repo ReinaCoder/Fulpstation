@@ -4461,6 +4461,7 @@
 #include "fulp_modules\features\species\moth\wings.dm"
 #include "fulp_modules\features\species\protogen\_global.dm"
 #include "fulp_modules\features\species\protogen\chassis.dm"
+#include "fulp_modules\features\species\protogen\customization.dm"
 #include "fulp_modules\features\species\protogen\protogen.dm"
 #include "fulp_modules\features\species\protogen\screen.dm"
 #include "fulp_modules\features\spells\_spells.dm"

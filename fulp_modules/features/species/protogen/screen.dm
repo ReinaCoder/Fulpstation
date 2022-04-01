@@ -1,5 +1,5 @@
 /datum/sprite_accessory/screen
-	icon = 'fulp_modules/species/icons/ipc_screens.dmi'
+	icon = 'fulp_modules/species/icons/proto_screens.dmi'
 	color_src = null
 
 /datum/sprite_accessory/screen/blank

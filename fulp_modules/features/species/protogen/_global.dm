@@ -1,3 +1,2 @@
-GLOBAL_LIST_EMPTY(ipc_screens_list)
-GLOBAL_LIST_EMPTY(ipc_antennas_list)
-GLOBAL_LIST_EMPTY(ipc_chassis_list)
+GLOBAL_LIST_EMPTY(proto_screens_list)
+GLOBAL_LIST_EMPTY(proto_chassis_list)
