@@ -773,6 +773,7 @@
 
 		var/datum/species/owner_species = human_owner.dna.species
 		species_id = owner_species.limbs_id
+		rendered_bp_icon = owner_species.limbs_icon
 		species_flags_list = human_owner.dna.species.species_traits
 
 		if(owner_species.use_skintones)
@@ -884,7 +885,7 @@
 
 	else
 		if(should_draw_greyscale)
-			limb.icon = icon_greyscale
+			limb.icon = rendered_bp_icon || icon_greyscale
 			if(should_draw_gender)
 				limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
 			else if(use_digitigrade)
@@ -892,7 +893,7 @@
 			else
 				limb.icon_state = "[species_id]_[body_zone]"
 		else
-			limb.icon = 'icons/mob/human_parts.dmi'
+			limb.icon = rendered_bp_icon || 'icons/mob/human_parts.dmi'
 			if(should_draw_gender)
 				limb.icon_state = "[species_id]_[body_zone]_[icon_gender]"
 			else
